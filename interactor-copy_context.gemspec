@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Interactor::CopyContext::VERSION
   spec.authors       = ["Fire-Dragon-DoL"]
   spec.email         = ["francesco.belladonna@gmail.com"]
-  spec.summary       = %q{Copy context on specified object's instance variables}
-  spec.description   = %q{Copy context on specified object's instance variables to allow easier interaction with returned values}
+  spec.summary       = %q{Copy interactor context on specified object's instance variables}
+  spec.description   = %q{Copy interactor context on specified object's instance variables to allow easier interaction with returned values}
   spec.homepage      = ""
   spec.license       = "MIT"
 
