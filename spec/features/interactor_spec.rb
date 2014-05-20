@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe DummyInteractor, :focus do
+describe DummyInteractor do
   let(:dummy1) { 'testmedummy' }
   let(:dummy_object) do
     Class.new do
@@ -14,7 +14,7 @@ describe DummyInteractor, :focus do
   it "sets @dummy1 on dummy_object" do
     DummyInteractor.perform_on(dummy_object, dummy1: dummy1)
     
-    expect(dummy_object.dummy1).to eq dummy_object.dummy1
+    expect(dummy_object.dummy1).to eq dummy1
   end
 
   context "when called on instance" do
@@ -23,7 +23,7 @@ describe DummyInteractor, :focus do
       interactor = DummyInteractor.new(dummy1: dummy1)
       interactor.perform_on(dummy_object)
       
-      expect(dummy_object.dummy1).to eq dummy_object.dummy1
+      expect(dummy_object.dummy1).to eq dummy1
     end
 
   end
