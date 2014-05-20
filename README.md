@@ -29,7 +29,7 @@ end
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'interactor-copy_context', '~> 0.0.1'
+gem 'interactor-copy_context', '~> 0.0.2'
 ```
 
 And then execute:

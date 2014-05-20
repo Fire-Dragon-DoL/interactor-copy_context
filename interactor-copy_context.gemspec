@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["francesco.belladonna@gmail.com"]
   spec.summary       = %q{Copy interactor context on specified object's instance variables}
   spec.description   = %q{Copy interactor context on specified object's instance variables to allow easier interaction with returned values}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/Fire-Dragon-DoL/interactor-copy_context"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
