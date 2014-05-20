@@ -11,4 +11,14 @@ module Interactor
     end
 
   end
+
+  # InstanceMethods
+
+  def perform_on(obj)
+    perform
+    context.each do |key, value|
+      obj.send(:instance_variable_set, :"@#{ key }", value)
+    end
+  end
+
 end
